@@ -1,20 +1,194 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="ro.decode.florestionline.MainActivity"
     tools:showIn="@layout/app_bar_main"
-    tools:context="ro.decode.florestionline.MainActivity">
+    android:scrollbars="none"
+    android:padding="12dp"
+    android:background="#d2455c">
 
-    <TextView
-        android:text="Hello World!"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-</RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="ro.decode.florestionline.MainActivity"
+        tools:showIn="@layout/app_bar_main"
+        android:scrollbars="none"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/white_bg_round"
+        android:padding="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1409dp"
+            android:clipToPadding="false"
+            android:id="@+id/relativeMain"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+
+            android:padding="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MENIU"
+                android:id="@+id/textView2"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#a1a1a1" />
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:id="@+id/imageView2"
+                android:layout_alignTop="@+id/button"
+                android:layout_alignLeft="@+id/button"
+                android:layout_alignStart="@+id/button"
+                android:layout_marginLeft="5dp"
+                android:background="#a1a1a1"
+                android:layout_marginTop="25dp" />
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:id="@+id/imageView3"
+                android:layout_alignTop="@+id/button"
+                android:layout_alignLeft="@+id/button"
+                android:layout_alignStart="@+id/button"
+                android:layout_marginLeft="5dp"
+                android:background="#a1a1a1"
+                android:layout_marginTop="60dp" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:text="Raporteaza un incident nou"
+                android:id="@+id/button"
+                android:layout_below="@+id/textView2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="#0fff"
+                android:textAllCaps="false"
+                android:drawableLeft="@drawable/circle_red"
+                android:drawablePadding="20dp"
+                android:textColor="#818690"
+                android:gravity="start|center"
+                android:textAlignment="textStart"
+                android:layout_marginTop="30dp"
+                android:textSize="16dp" />
+
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:text="Noutati"
+                android:id="@+id/button2"
+                android:background="#0fff"
+                android:textAllCaps="false"
+                android:drawableLeft="@drawable/circle_turqua"
+                android:drawablePadding="20dp"
+                android:textColor="#818690"
+                android:layout_below="@+id/button"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textAlignment="textStart"
+                android:gravity="start|center"
+                android:textSize="16dp" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:text="Informatii utile"
+                android:id="@+id/button3"
+                android:background="#0fff"
+                android:textAllCaps="false"
+                android:drawableLeft="@drawable/circle_gray"
+                android:drawablePadding="20dp"
+                android:textColor="#818690"
+                android:layout_below="@+id/button2"
+                android:layout_alignLeft="@+id/button2"
+                android:layout_alignStart="@+id/button2"
+                android:gravity="start|center"
+                android:textAlignment="textStart"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:id="@+id/imageView4"
+                android:background="#a1a1a1"
+                android:layout_below="@+id/button3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NEWS FEED"
+                android:id="@+id/textView3"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#a1a1a1"
+                android:layout_below="@+id/imageView4"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="20dp" />
+
+            <ListView
+                android:layout_width="fill_parent"
+                android:layout_height="450dp"
+                android:id="@+id/listView"
+                android:focusable="false"
+                android:layout_below="@+id/textView3"
+                android:layout_alignLeft="@+id/textView3"
+                android:layout_alignStart="@+id/textView3"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="-14dp"
+                android:layout_marginLeft="-14dp" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:id="@+id/imageView6"
+                android:background="#a1a1a1"
+                android:layout_below="@+id/listView"
+                android:layout_alignRight="@+id/imageView4"
+                android:layout_alignEnd="@+id/imageView4"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SERVICII"
+                android:id="@+id/textView4"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#a1a1a1"
+                android:layout_alignTop="@+id/imageView6"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="20dp" />
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
