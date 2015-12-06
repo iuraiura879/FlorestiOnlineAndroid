@@ -1,0 +1,70 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="ro.decode.florestionline.AllReports">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/yellow_button"
+            android:clickable="true"
+            android:layout_marginTop="30dp"
+            android:id="@+id/linearLayout">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:text="a"
+                android:id="@+id/textView"
+                android:layout_gravity="center_vertical"
+                android:textSize="22dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="@drawable/yelow_orange_button_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="ADAUGA REPORT"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical|center_horizontal"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" />
+        </LinearLayout>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="125 exporturi existente"
+           android:id="@+id/textView8"
+           android:layout_below="@+id/linearLayout"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="5dp"
+           android:textColor="#8a8a8a" />
+
+       <ro.decode.florestionline.NonScrollListView
+           android:id="@+id/lv_nonscroll_list"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:dividerHeight="10dp"
+           android:paddingTop="10dp"
+           android:paddingBottom="10dp"
+           android:clipToPadding="false"
+           android:layout_marginTop="35dp"
+           android:layout_below="@+id/textView8"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentStart="true"
+           android:layout_marginBottom="20dp">
+       </ro.decode.florestionline.NonScrollListView>
+
+
+   </RelativeLayout>
+
+</ScrollView>

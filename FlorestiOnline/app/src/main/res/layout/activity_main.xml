@@ -1,0 +1,200 @@
+<!-- The important thing to note here is the added fitSystemWindows -->
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/my_drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <!-- Your normal content view -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e8e8e8"
+        android:orientation="vertical">
+
+        <!-- We use a Toolbar so that our drawer can be displayed
+             in front of the action bar -->
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/my_awesome_toolbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:minHeight="?attr/actionBarSize"
+            android:background="?attr/colorPrimary">
+
+
+        </android.support.v7.widget.Toolbar>
+
+        <!-- The rest of your content view -->
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <!-- Your drawer view. This can be any view, LinearLayout
+         is just an example. As we have set fitSystemWindows=true
+         this will be displayed under the status bar. -->
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|start"
+        android:background="#3e3c44"
+        android:fitsSystemWindows="true"
+
+        android:orientation="vertical">
+
+        <!-- Your drawer content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginBottom="20dp">
+
+            <Button
+                android:id="@+id/refreshButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="z"
+                android:textSize="27sp"
+                android:textAllCaps="false"
+                android:textColor="#b7b2c5"
+                android:background="?android:attr/selectableItemBackground"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Menu"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Stiri &amp; noutati"
+            android:onClick="newsPressed"
+            android:paddingLeft="18dp"
+            android:gravity="center_vertical|left"
+            android:paddingRight="10dp"
+            android:textAllCaps="false"
+            android:background="?android:attr/selectableItemBackground"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#53505d" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Reporturi"
+            android:paddingLeft="18dp"
+            android:gravity="center_vertical|left"
+            android:paddingRight="10dp"
+            android:textAllCaps="false"
+            android:onClick="reportsPressed"
+            android:background="?android:attr/selectableItemBackground"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#53505d" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Starea traficului"
+            android:paddingLeft="18dp"
+            android:gravity="center_vertical|left"
+            android:paddingRight="10dp"
+            android:textAllCaps="false"
+            android:background="?android:attr/selectableItemBackground"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#53505d" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Orar autobuze"
+            android:paddingLeft="18dp"
+            android:gravity="center_vertical|left"
+            android:paddingRight="10dp"
+            android:textAllCaps="false"
+            android:background="?android:attr/selectableItemBackground"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#53505d" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:orientation="horizontal"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/contul_meu"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="s"
+                android:paddingLeft="18dp"
+                android:gravity="center_vertical|left"
+                android:textAllCaps="false"
+                />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Contul meu"
+                android:paddingLeft="10dp"
+                android:gravity="center_vertical|left"
+                android:textAllCaps="false"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:orientation="horizontal"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/setari"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="W"
+                android:paddingLeft="18dp"
+                android:gravity="center_vertical|left"
+                android:textAllCaps="false"
+                />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Setari"
+                android:paddingLeft="10dp"
+                android:gravity="center_vertical|left"
+                android:textAllCaps="false"
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>
