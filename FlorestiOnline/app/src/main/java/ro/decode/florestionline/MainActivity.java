@@ -61,28 +61,38 @@ public class MainActivity extends AppCompatActivity
 
 
 
-        //Layout, to be a fragment
-
-        ListView yourListView = (ListView) findViewById(R.id.listView);
-        yourListView.setFocusable(false);
-        List<NewsOrReport> l = new ArrayList<NewsOrReport>();
-        // get data from the table by the ListAdapter
-
-        NewsOrReport temp = new NewsOrReport();
-        temp.setYear(2015);
-        temp.setDate(05);
-        temp.setMonth(10);
-        temp.setTitle("Lorem isprum dolor sit");
-        temp.setShortText("Vivamus consequat fringilla  lorem, at accumsan leo  Posuere id.");
-        l.add(temp);
-        l.add(temp);
-        l.add(temp);
-
-        AllTogetherAdapter customAdapter = new AllTogetherAdapter(this, R.layout.news_or_report_gray, l);
-
-        yourListView .setAdapter(customAdapter);
+        getSupportFragmentManager().beginTransaction().add(R.id.fragmentContainer, new MainFragment()).commit();
 
 
+
+
+    }
+
+
+    public void openAllNews(View v){
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer, new NewsListFragment()).addToBackStack("").commit();
+
+    }
+
+
+    public void openNewsDetail(){
+
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer, new FullNewsArticleFragment()).addToBackStack("").commit();
+
+    }
+
+    public void openReportDetail(){
+
+
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer, new FullReportFragment()).addToBackStack("").commit();
+
+    }
+
+    public void goHome(View v){
+
+
+
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer, new MainFragment()).commit();
 
     }
 
