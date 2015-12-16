@@ -51,96 +51,169 @@
                 android:layout_alignParentTop="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:textColor="#a1a1a1"
-                android:drawableLeft="@drawable/back_arrow"
+                android:textColor="#ededed"
+                android:drawableLeft="@drawable/back_arrow_selector"
                 android:drawablePadding="5dp"
-                android:background="#0fff" />
+                android:background="#0fff"
+                android:layout_alignRight="@+id/imageView4"
+                android:layout_alignEnd="@+id/imageView4"
+                android:gravity="center_vertical|left" />
 
             <ImageView
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
                 android:id="@+id/imageView4"
-                android:background="#a1a1a1"
+                android:background="#ededed"
                 android:layout_below="@+id/button8"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="10dp" />
 
-            <ImageView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/imageView9"
-                android:src="@drawable/news"
-                android:adjustViewBounds="true"
-                android:scaleType="fitCenter"
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:text="ADAUGA O IMAGINE"
+                android:drawableLeft="@drawable/cinema"
+                android:drawablePadding="20dp"
+                android:background="@drawable/top_button"
+                android:padding="5dp"
+                android:id="@+id/button13"
+
                 android:layout_below="@+id/imageView4"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
                 android:layout_marginTop="20dp"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Lorem isprum dolor sit"
-                android:id="@+id/textView6"
-                android:textSize="18dp"
-                android:layout_below="@+id/imageView9"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginTop="20dp" />
+                android:textColor="#ededed"
+                android:gravity="center_vertical|left" />
 
             <ImageView
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:id="@+id/imageView11"
-                android:layout_below="@+id/textView6"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:src="@drawable/calendar"
-                android:layout_marginTop="20dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="27.05.2012"
-                android:id="@+id/textView7"
-                android:layout_alignTop="@+id/imageView11"
-                android:layout_toRightOf="@+id/imageView11"
-                android:layout_toEndOf="@+id/imageView11"
-                android:layout_alignBottom="@+id/imageView11"
-                android:layout_marginLeft="10dp"
-                android:textColor="#88d9a4"
-                android:gravity="center_vertical" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Vivamus consequat fringilla lorem, at a ccumsan leo posuere id. Vestibulum  ultricies sem at leo convallis pellentesque.  Cum sociis natoque penatibus et magnis  dis parturient montes, nascetur ridiculus  mus. Duis efficitur ipsum mi, id  condimentum ex elementum in."
-                android:id="@+id/textView8"
-                android:layout_below="@+id/imageView11"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginTop="20dp"
-                android:textColor="#b8b8b8" />
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:id="@+id/imageView13"
+                android:background="#ededed"
+                android:layout_below="@+id/button13"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="-14dp"
+                android:layout_marginRight="-14dp" />
 
             <Button
                 android:layout_width="wrap_content"
-                android:layout_height="45dp"
-                android:text="Noutati"
-                android:id="@+id/button11"
-                android:textColor="#fff"
-                android:drawableLeft="@drawable/back_arrow_white"
-                android:drawablePadding="5dp"
-                android:background="@drawable/back_button"
-                android:layout_below="@+id/textView8"
+                android:layout_height="60dp"
+                android:text="LOCATIE"
+                android:id="@+id/button14"
+                android:drawableLeft="@drawable/map_blue"
+                android:drawablePadding="20dp"
+                android:background="@drawable/top_button"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_alignTop="@+id/imageView13"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_marginTop="20dp"
-                android:padding="10dp"
-                android:onClick="openAllNews"
+                android:textColor="#ededed"
+                android:gravity="center_vertical|left" />
 
-                android:nestedScrollingEnabled="false" />
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:id="@+id/imageView14"
+                android:layout_marginTop="5dp"
+                android:background="#ededed"
+                android:layout_below="@+id/button14"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="-14dp"
+                android:layout_marginRight="-14dp" />
+
+            <ImageView
+                android:layout_width="64px"
+                android:layout_height="64px"
+
+                android:id="@+id/imageView15"
+                android:layout_below="@+id/imageView14"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/document"
+                android:layout_marginLeft="5dp"
+                android:layout_alignBottom="@+id/editText"
+                android:scaleType="fitCenter" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/editText"
+                android:layout_alignTop="@+id/imageView14"
+                android:layout_toRightOf="@+id/imageView15"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:background="#0fff"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:hint="DESCRIERE"
+                android:gravity="left|top"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:textColor="#ededed"
+                android:textColorHint="#ededed"
+                android:layout_marginBottom="10dp"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:id="@+id/imageView16"
+                android:background="#ededed"
+                android:layout_below="@+id/editText"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="-14dp"
+                android:layout_marginRight="-14dp" />
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:id="@+id/imageView17"
+                android:background="#0fff"
+                android:layout_below="@+id/imageView16"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PUBLICA"
+                android:id="@+id/button15"
+                android:layout_below="@+id/imageView17"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_toLeftOf="@+id/imageView17"
+                android:layout_toStartOf="@+id/imageView17"
+                android:layout_marginRight="10dp"
+                android:textColor="#fff"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/report_button" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RAPORTURI"
+                android:id="@+id/button16"
+                android:onClick="openAllReports"
+                android:layout_alignBottom="@+id/button15"
+                android:layout_toRightOf="@+id/imageView17"
+                android:layout_below="@+id/imageView17"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="10dp"
+                android:textColor="#fff"
+                android:background="@drawable/all_reports_button" />
 
         </RelativeLayout>
     </RelativeLayout>

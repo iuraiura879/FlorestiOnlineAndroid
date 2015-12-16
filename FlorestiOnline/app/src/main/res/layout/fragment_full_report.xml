@@ -51,121 +51,113 @@
                 android:layout_alignParentTop="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:textColor="#a1a1a1"
-                android:drawableLeft="@drawable/back_arrow"
+                android:textColor="#ededed"
+                android:drawableLeft="@drawable/back_arrow_selector"
                 android:drawablePadding="5dp"
-                android:background="#0fff" />
+                android:background="#0fff"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:gravity="center_vertical|left" />
 
             <ImageView
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
                 android:id="@+id/imageView4"
-                android:background="#a1a1a1"
+                android:background="#ededed"
                 android:layout_below="@+id/button8"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="10dp" />
 
-            <ImageView
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Locatie: strada Garii 76, Floresti"
+                android:id="@+id/textView6"
+                android:textColor="#4c89c1"
+                android:layout_below="@+id/textView15"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lorem ipsum dolor sit amet, consectetur  adipiscing elit. Duis blandit lacus odio,  tempus fermentum ipsum ultricies in.  Duis molestie at erat ac consequat.  Pellentesque elit nunc, pharetra congue  lacinia vitae, scelerisque et diam"
+                android:id="@+id/textView8"
+                android:textColor="#b8b8b8"
+                android:lineSpacingExtra="5dp"
+                android:layout_below="@+id/textView9"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp" />
+
+
+            <GridView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageView9"
-                android:src="@drawable/news"
-                android:adjustViewBounds="true"
-                android:scaleType="fitCenter"
-                android:layout_below="@+id/imageView4"
-                android:layout_marginTop="20dp"
+                android:id="@+id/gridView"
+                android:columnWidth="90dp"
+                android:gravity="center"
+                android:horizontalSpacing="5dp"
+                android:numColumns="auto_fit"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="5dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Lorem isprum dolor sit"
-                android:id="@+id/textView6"
-                android:textSize="18dp"
-                android:layout_below="@+id/imageView9"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginTop="20dp" />
-
-            <ImageView
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:id="@+id/imageView11"
-                android:layout_below="@+id/textView6"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:src="@drawable/red_agenda"
-                android:layout_marginTop="20dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="27.05.2012"
-                android:id="@+id/textView7"
-                android:layout_alignTop="@+id/imageView11"
-                android:layout_toRightOf="@+id/imageView11"
-                android:layout_toEndOf="@+id/imageView11"
-                android:layout_marginLeft="10dp"
-                android:textColor="#d2455c"
-                android:gravity="center_vertical"
-                android:layout_alignBottom="@+id/imageView11" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Vivamus consequat fringilla lorem, at a ccumsan leo posuere id. Vestibulum  ultricies sem at leo convallis pellentesque.  Cum sociis natoque penatibus et magnis  dis parturient montes, nascetur ridiculus  mus. Duis efficitur ipsum mi, id  condimentum ex elementum in."
-                android:id="@+id/textView8"
-                android:layout_below="@+id/imageView11"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
                 android:layout_marginTop="20dp"
-                android:textColor="#b8b8b8" />
+                android:layout_below="@+id/textView8" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="45dp"
-                android:text="LISTA REPORTURI"
+                android:text="Reporturi"
                 android:id="@+id/button11"
                 android:textColor="#fff"
                 android:drawableLeft="@drawable/back_arrow_white"
                 android:drawablePadding="5dp"
                 android:background="@drawable/back_button"
-                android:layout_below="@+id/textView8"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginTop="20dp"
                 android:padding="10dp"
+                android:onClick="openAllReports"
 
-                android:nestedScrollingEnabled="false" />
+                android:nestedScrollingEnabled="false"
+                android:layout_below="@+id/gridView"
+                android:layout_marginTop="20dp" />
 
             <ImageView
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:id="@+id/imageView10"
-                android:src="@drawable/red_map"
-                android:layout_alignTop="@+id/textView7"
-                android:layout_toRightOf="@+id/textView7"
-                android:layout_toEndOf="@+id/textView7"
-                android:layout_alignBottom="@+id/textView7"
-                android:layout_marginLeft="30dp" />
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:id="@+id/imageView19"
+                android:background="#ededed"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/textView8" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Floresti, str. Eroilor"
+                android:text="Postat la 05.02.2205"
+                android:id="@+id/textView15"
+                android:layout_alignTop="@+id/imageView4"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp"
+                android:textColor="#d1d1d1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DETALII REPORT"
                 android:id="@+id/textView9"
-                android:textColor="#d2455c"
-                android:gravity="center_vertical"
-                android:layout_alignTop="@+id/imageView10"
-                android:layout_toRightOf="@+id/imageView10"
-                android:layout_toEndOf="@+id/imageView10"
-                android:layout_alignBottom="@+id/imageView10"
-                android:layout_marginLeft="10dp" />
+                android:textColor="#cecece"
+                android:layout_below="@+id/textView6"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold" />
 
         </RelativeLayout>
+
     </RelativeLayout>
 </android.support.v4.widget.NestedScrollView>
 

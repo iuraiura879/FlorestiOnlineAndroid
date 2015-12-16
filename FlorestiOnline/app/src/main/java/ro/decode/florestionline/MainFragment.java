@@ -86,7 +86,16 @@ public class MainFragment extends Fragment {
         SponsorAdapter customAdapter2 = new SponsorAdapter(getContext(), R.layout.sponsored_green, li);
 
         yourListView .setAdapter(customAdapter2);
+        yourListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
+                    ((MainActivity) getActivity()).openServiceDetail();
+
+
+
+            }
+        });
 
         return v;
     }
@@ -95,6 +104,8 @@ public class MainFragment extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
+
+        MainActivity.state = 1;
 
         Toolbar toolbarTop = (Toolbar) getActivity().findViewById(R.id.toolbar);
         TextView mTitle = (TextView) toolbarTop.findViewById(R.id.toolbar_title);

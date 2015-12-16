@@ -95,11 +95,11 @@ public class AllNewsAdapter extends RecyclerView.Adapter<AllNewsAdapter.ViewHold
 
         if( viewType == 1)
             v = LayoutInflater.from(parent.getContext())
-                    .inflate(R.layout.all_news_list_item, parent, false);
+                    .inflate(R.layout.simple_item_news, parent, false);
 
         if( viewType == 2)
             v = LayoutInflater.from(parent.getContext())
-                    .inflate(R.layout.all_news_list_item_end, parent, false);
+                    .inflate(R.layout.simple_item_news_bottom, parent, false);
         // set the view's size, margins, paddings and layout parameters
 
 

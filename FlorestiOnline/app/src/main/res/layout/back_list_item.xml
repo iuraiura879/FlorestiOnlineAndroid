@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:background="@drawable/white_bg_round_top"
     android:layout_marginTop="20dp"
-    android:padding="12dp">
+    android:padding="14dp">
 
 
     <Button
@@ -16,19 +16,22 @@
         android:text="BACK TO HOME"
         android:id="@+id/button12"
         android:onClick="goHome"
-        android:textColor="#a1a1a1"
-        android:drawableLeft="@drawable/back_arrow"
+        android:textColor="#ededed"
+        android:drawableLeft="@drawable/back_arrow_selector"
         android:drawablePadding="5dp"
         android:background="#0fff"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/imageView12"
+        android:layout_alignEnd="@+id/imageView12"
+        android:gravity="center_vertical|left" />
 
     <ImageView
         android:layout_width="fill_parent"
         android:layout_height="1dp"
         android:id="@+id/imageView12"
-        android:background="#a1a1a1"
+        android:background="#ededed"
         android:layout_below="@+id/button12"
         android:layout_alignParentLeft="true"
         android:layout_marginTop="10dp" />

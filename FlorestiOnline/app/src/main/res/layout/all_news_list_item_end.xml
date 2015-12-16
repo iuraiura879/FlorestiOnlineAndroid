@@ -75,7 +75,7 @@
         android:layout_width="fill_parent"
         android:layout_height="1dp"
         android:id="@+id/imageView4"
-        android:background="#a1a1a1"
+        android:background="#ededed"
         android:layout_below="@+id/imageView11"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"

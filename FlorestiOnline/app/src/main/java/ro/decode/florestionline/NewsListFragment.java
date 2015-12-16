@@ -61,6 +61,15 @@ public class NewsListFragment extends Fragment {
         myDataset.add(temp);
         myDataset.add(temp);
         myDataset.add(temp);
+        myDataset.add(temp);
+        myDataset.add(temp);
+        myDataset.add(temp);
+        myDataset.add(temp);
+        myDataset.add(temp);
+        myDataset.add(temp);
+        myDataset.add(temp);
+        myDataset.add(temp);
+        myDataset.add(temp);
 
         // specify an adapter (see also next example)
         mAdapter = new AllNewsAdapter(myDataset, getActivity());
@@ -74,7 +83,7 @@ public class NewsListFragment extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-
+        MainActivity.state = 4;
         Toolbar toolbarTop = (Toolbar) getActivity().findViewById(R.id.toolbar);
         TextView mTitle = (TextView) toolbarTop.findViewById(R.id.toolbar_title);
         mTitle.setText("NEWS");

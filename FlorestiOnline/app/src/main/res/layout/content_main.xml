@@ -34,7 +34,6 @@
             android:id="@+id/relativeMain"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-
             android:padding="14dp"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
@@ -50,7 +49,7 @@
                 android:layout_alignParentStart="true"
                 android:textStyle="bold"
                 android:textSize="15dp"
-                android:textColor="#a1a1a1" />
+                android:textColor="#d1d1d1" />
 
             <ImageView
                 android:layout_width="1dp"
@@ -60,7 +59,7 @@
                 android:layout_alignLeft="@+id/button"
                 android:layout_alignStart="@+id/button"
                 android:layout_marginLeft="15dp"
-                android:background="#a1a1a1"
+                android:background="#ededed"
                 android:layout_marginTop="25dp" />
 
             <ImageView
@@ -71,8 +70,20 @@
                 android:layout_alignLeft="@+id/button"
                 android:layout_alignStart="@+id/button"
                 android:layout_marginLeft="15dp"
-                android:background="#a1a1a1"
+                android:background="#ededed"
                 android:layout_marginTop="60dp" />
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:id="@+id/imageView"
+                android:layout_alignTop="@+id/button"
+                android:layout_alignLeft="@+id/button"
+                android:layout_alignStart="@+id/button"
+                android:layout_marginLeft="15dp"
+                android:background="#ededed"
+                android:layout_marginTop="95dp" />
+
 
             <Button
                 android:layout_width="fill_parent"
@@ -87,6 +98,7 @@
                 android:drawablePadding="20dp"
                 android:paddingLeft="10dp"
                 android:textColor="#818690"
+                android:onClick="openNewReport"
                 android:gravity="start|center"
                 android:textAlignment="textStart"
                 android:layout_marginTop="30dp"
@@ -116,7 +128,7 @@
             <Button
                 android:layout_width="fill_parent"
                 android:layout_height="35dp"
-                android:text="Informatii utile"
+                android:text="Reporturi"
                 android:id="@+id/button3"
                 android:background="@drawable/top_button"
                 android:textAllCaps="false"
@@ -124,7 +136,28 @@
                 android:drawablePadding="20dp"
                 android:textColor="#818690"
                 android:paddingLeft="10dp"
+                android:onClick="openAllReports"
                 android:layout_below="@+id/button2"
+                android:layout_alignLeft="@+id/button2"
+                android:layout_alignStart="@+id/button2"
+                android:gravity="start|center"
+                android:textAlignment="textStart"
+                android:textSize="16dp" />
+
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:text="Servicii"
+                android:id="@+id/button69"
+                android:background="@drawable/top_button"
+                android:textAllCaps="false"
+                android:drawableLeft="@drawable/circle_dark_green"
+                android:drawablePadding="20dp"
+                android:textColor="#818690"
+                android:paddingLeft="10dp"
+                android:onClick="openAllService"
+                android:layout_below="@+id/button3"
                 android:layout_alignLeft="@+id/button2"
                 android:layout_alignStart="@+id/button2"
                 android:gravity="start|center"
@@ -134,13 +167,14 @@
             <ImageView
                 android:layout_width="fill_parent"
                 android:layout_height="1dp"
-                android:id="@+id/imageView4"
-                android:background="#a1a1a1"
-                android:layout_below="@+id/button3"
+                android:id="@+id/imageView5"
+                android:background="#ededed"
+                android:layout_below="@+id/button69"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="40dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginLeft="5dp" />
+
 
             <TextView
                 android:layout_width="wrap_content"
@@ -149,8 +183,8 @@
                 android:id="@+id/textView3"
                 android:textStyle="bold"
                 android:textSize="15dp"
-                android:textColor="#a1a1a1"
-                android:layout_below="@+id/imageView4"
+                android:textColor="#d1d1d1"
+                android:layout_below="@+id/imageView5"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_marginTop="20dp" />
@@ -169,15 +203,14 @@
 
             <ImageView
                 android:layout_width="fill_parent"
-                android:layout_height="1dp"
+                android:layout_height="0dp"
                 android:id="@+id/imageView6"
-                android:background="#a1a1a1"
+                android:background="#ededed"
                 android:layout_below="@+id/listView"
-                android:layout_alignRight="@+id/imageView4"
-                android:layout_alignEnd="@+id/imageView4"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="0dp"
                 android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp" />
+                android:layout_marginRight="5dp"
+                android:layout_centerHorizontal="true" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -186,7 +219,7 @@
                 android:id="@+id/textView4"
                 android:textStyle="bold"
                 android:textSize="15dp"
-                android:textColor="#a1a1a1"
+                android:textColor="#d1d1d1"
                 android:layout_alignTop="@+id/imageView6"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
@@ -194,9 +227,10 @@
 
             <Button
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:text="ALIMENTARA"
+                android:layout_height="20dp"
+                android:text="ALIMENTARE"
                 android:id="@+id/button4"
+                android:textSize="10sp"
                 android:layout_below="@+id/textView4"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
@@ -208,9 +242,10 @@
 
             <Button
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
+                android:layout_height="20dp"
                 android:text="BARURI"
                 android:id="@+id/button5"
+                android:textSize="10sp"
                 android:background="@drawable/std_button"
                 android:textColor="#fff"
                 android:paddingLeft="5dp"
@@ -222,8 +257,9 @@
 
             <Button
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:text="CABINET MEDICAL"
+                android:layout_height="20dp"
+                android:textSize="10sp"
+                android:text="FARMACII"
                 android:id="@+id/button6"
                 android:background="@drawable/std_button"
                 android:textColor="#fff"
@@ -236,7 +272,8 @@
 
             <Button
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
+                android:layout_height="20dp"
+                android:textSize="10sp"
                 android:text="DIVERSE"
                 android:id="@+id/button7"
                 android:background="@drawable/std_button"
@@ -250,7 +287,8 @@
 
             <Button
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
+                android:layout_height="20dp"
+                android:textSize="10sp"
                 android:text="HOTELURI"
                 android:id="@+id/button9"
                 android:background="@drawable/std_button"
@@ -264,8 +302,9 @@
 
             <Button
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:text="FRIZERIE/COAFOR"
+                android:layout_height="20dp"
+                android:textSize="10sp"
+                android:text="FRIZERII"
                 android:id="@+id/button10"
                 android:background="@drawable/std_button"
                 android:textColor="#fff"
@@ -283,8 +322,8 @@
                 android:id="@+id/textView5"
                 android:textStyle="bold"
                 android:textSize="15dp"
-                android:textColor="#a1a1a1"
-                android:layout_marginTop="20dp"
+                android:textColor="#d1d1d1"
+                android:layout_marginTop="35dp"
                 android:layout_below="@+id/button7" />
 
             <ListView
@@ -294,7 +333,7 @@
                 android:layout_below="@+id/textView5"
                 android:layout_alignLeft="@+id/textView5"
                 android:layout_alignStart="@+id/textView5"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginBottom="40dp"
                 android:layout_marginLeft="-14dp"
                 android:layout_marginRight="-14dp" />

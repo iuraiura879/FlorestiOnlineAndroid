@@ -36,7 +36,7 @@ public class AddAReportFragment extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-
+        MainActivity.state = 4;
         Toolbar toolbarTop = (Toolbar) getActivity().findViewById(R.id.toolbar);
         TextView mTitle = (TextView) toolbarTop.findViewById(R.id.toolbar_title);
         mTitle.setText("RAPORTEAZA");

@@ -26,11 +26,12 @@
         android:textStyle="bold"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:textColor="#39a180" />
+        android:textColor="#39a180"
+        android:lines="1" />
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="70dp"
+        android:layout_height="wrap_content"
         android:text="Vivamus consequat fringilla  lorem, at accumsan leo  Posuere id."
         android:id="@+id/description"
         android:textSize="16dp"
@@ -39,7 +40,7 @@
         android:layout_alignStart="@+id/title"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:gravity="center_vertical|left" />
 
     <TextView
@@ -49,12 +50,14 @@
         android:text="2015"
         android:id="@+id/year"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="11dp"
         android:layout_marginTop="10dp"
         android:textColor="#fff"
-        android:textSize="13dp" />
+        android:textSize="13dp"
+        android:layout_alignRight="@+id/imageView5"
+        android:layout_alignEnd="@+id/imageView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center|center_vertical" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -67,6 +70,9 @@
         android:layout_alignLeft="@+id/year"
         android:layout_alignStart="@+id/year"
         android:layout_marginTop="4dp"
-        android:textSize="13dp" />
+        android:textSize="13dp"
+        android:layout_alignRight="@+id/imageView5"
+        android:layout_alignEnd="@+id/imageView5"
+        android:gravity="center" />
 
 </RelativeLayout>
